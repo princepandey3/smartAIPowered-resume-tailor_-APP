@@ -1,0 +1,13 @@
+{
+  "name": "airesumetailored",
+  "version": "1.0.0",
+  "description": "A modern, responsive React application for AI-powered resume analysis with ATS (Applicant Tracking System) scoring.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix server &&  npm run patch --prefix server && npm install --prefix client &&  npm run build --prefix client",
+    "start": "npm run start --prefix server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
