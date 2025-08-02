@@ -28,6 +28,7 @@ A full-stack application for AI-powered resume analysis with ATS scoring. Upload
 - JWT Authentication
 - Multer (file upload)
 - bcryptjs (password hashing)
+- Gemini API For Analysis
 
 ## 🖼️ App Screenshots
 
