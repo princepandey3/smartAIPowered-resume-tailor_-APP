@@ -7,10 +7,16 @@ import resumeRoutes from "./routes/resume.js";
 import cors from "cors";
 import path from "path";
 import { fileURLToPath } from "url";
+import job from "./config/crone.js";
 
 dotenv.config();
 
 const app = express();
+
+app.get("/api/health", (req, res) => {
+  res.status(200).json({ status: "ok" });
+});
+if (process.env.NODE_ENV === "production") job.start();
 
 const PORT = process.env.PORT || 5000;
 const __filename = fileURLToPath(import.meta.url);
