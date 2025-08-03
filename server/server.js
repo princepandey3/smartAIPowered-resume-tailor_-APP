@@ -16,6 +16,7 @@ const app = express();
 app.get("/api/health", (req, res) => {
   res.status(200).json({ status: "ok" });
 });
+
 if (process.env.NODE_ENV === "production") job.start();
 
 const PORT = process.env.PORT || 5000;
